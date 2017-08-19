@@ -20,7 +20,7 @@
           <legend>Loan Parameters</legend>
           <div class="field{% if form.amount.flags.required %} field-required{% endif %}{% if form.amount.errors %} field-error{% endif %}">
             {{ form.amount.label() }}
-            {{ form.amount(type="text", class_="amount") }} <span class="help">(in LEK)</span>
+            {{ form.amount(type="text", class_="amount") }} <span class="help">(in INR)</span>
             {% if form.amount.errors %}
             <ul class="errorlist">
               {% for err in form.amount.errors %}
